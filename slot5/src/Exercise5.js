@@ -1,0 +1,380 @@
+import React from 'react';
+
+const Exercise5 = () => {
+  return (
+    <>
+      <style>{`
+        body {
+          background: #fff;
+        }
+        .header-bg {
+          background: #EACDAD;
+        }
+        .logo {
+          max-width: 90px;
+        }
+        .fpt-title {
+          color: #f57c00;
+          font-weight: bold;
+          font-size: 18px;
+          margin-left: 2px;
+          letter-spacing: 1px;
+        }
+        .main-img {
+          width: 100%;
+          max-height: 600px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+        .student-card {
+          box-shadow: 0 2px 8px #eee;
+          border-radius: 8px;
+          margin-bottom: 32px;
+        }
+        .student-img {
+          width: 100%;
+          height: 450px;
+          object-fit: cover;
+          border-radius: 8px 8px 0 0;
+        }
+        .footer {
+          background: #d48454;
+          color: #222;
+          padding: 24px 0 8px 0;
+          font-size: 16px;
+        }
+        .footer a {
+          color: #222;
+          margin: 0 6px;
+          text-decoration: none;
+          font-size: 2rem;
+          vertical-align: middle;
+        }
+        .breadcrumb {
+          background: #fff;
+        }
+        .search-box {
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 2px 8px;
+        }
+        .nav-link,
+        .nav-link:visited {
+          color: #f57c00 !important;
+          font-weight: 500;
+        }
+        .nav-link.active {
+          color: #f57c00 !important;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        .top-bar {
+          font-size: 15px;
+        }
+        .top-bar .nav-link {
+          padding: 0 6px;
+        }
+        .menu-bar {
+          background: #f4a03b;
+        }
+        .right-text {
+          text-align: right;
+        }
+        .menu-bar .nav-link {
+          color: #fff !important;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+        .menu-bar .nav-link.active {
+          font-weight: bold;
+        }
+        .menu-bar .nav-link:not(:last-child) {
+          margin-right: 10px;
+        }
+        .menu-bar .nav-link:hover {
+          text-decoration: underline;
+        }
+        .footer .address-title {
+          font-weight: bold;
+          margin-bottom: 2px;
+          font-size: 1.2rem;
+        }
+        .footer .contact-info {
+          margin-bottom: 8px;
+        }
+        .footer .contact-info i {
+          margin-right: 6px;
+          font-size: 1.1rem;
+          color: #222;
+        }
+        .footer .contact-info a {
+          color: #1a73e8;
+          font-size: 1rem;
+          text-decoration: underline;
+        }
+        .footer .copyright {
+          text-align: center;
+          font-size: 1rem;
+          margin-top: 10px;
+          color: #222;
+        }
+        .footer .social-icons {
+          font-size: 2rem;
+          margin-bottom: 8px;
+        }
+        .footer .social-icons a {
+          margin: 0 8px;
+          color: #222;
+          transition: color 0.2s;
+        }
+        .footer .social-icons a:hover {
+          color: #f57c00;
+        }
+        .background-orange {
+          background-color: orange;
+          width: 100%px;
+        }
+        @media (max-width: 768px) {
+          .main-img {
+            max-height: 180px;
+          }
+          .student-img {
+            height: 550px;
+          }
+          .footer .row {
+            flex-direction: column;
+            text-align: center;
+          }
+          .footer .col-md-6 {
+            text-align: center !important;
+          }
+          .footer .social-icons {
+            margin-top: 10px;
+          }
+        }
+      `}</style>
+
+      {/* Header */}
+      <div className="header-bg pb-2">
+        <div className="container">
+          <div className="d-flex align-items-center py-2">
+            <div className="d-flex align-items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/FPT_logo_2010.svg/2560px-FPT_logo_2010.svg.png" className="logo me-2" alt="FPT" />
+              <div className="top-bar d-flex align-items-center ms-3">
+                <a className="nav-link" href="#"><i className="fas fa-home"></i> Trang chủ</a>
+                <a className="nav-link" href="#"><i className="fas fa-info-circle"></i> Ngành học</a>
+                <a className="nav-link" href="#"><i className="fas fa-id-card"></i> Tuyển sinh</a>
+                <a className="nav-link" href="#"><i className="fas fa-list"></i> Sinh viên</a>
+              </div>
+            </div>
+            <span className="ms-auto">Search: <input type="text" className="search-box" /></span>
+          </div>
+        </div>
+      </div>
+
+      {/* Banner */}
+      <div className="header-bg">
+        <div className="background-orange" style={{padding: '32px 24px'}}>
+          <img
+            src="https://thanhnien.mediacdn.vn/Uploaded/quochung-qc/2022_06_23/fpt-2-3376.jpg"
+            className="main-img my-0"
+            alt="FPT Students"
+            style={{display: 'block', margin: '0 auto', borderRadius: '8px', background: '#fff'}}
+          />
+        </div>
+      </div>
+
+      {/* Breadcrumb */}
+      <div className="container my-2">
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item"><a href="#">Home</a></li>
+            <li className="breadcrumb-item active" aria-current="page">Students</li>
+          </ol>
+        </nav>
+      </div>
+
+      {/* Students Detail */}
+      <div className="container">
+        <h3 className="text-center my-4">Students Detail</h3>
+        <div className="row row-cols-1 row-cols-md-2 g-4">
+
+          {/* Student 1 */}
+          <div className="col">
+            <div className="student-card bg-white p-0">
+              <img
+                src="https://caodang.fpt.edu.vn/wp-content/uploads/z4377925233190_95083fd912260812cd0083a7297a89ce.jpg"
+                className="student-img"
+                alt="Student 1"
+              />
+              <div className="p-3">
+                <div className="text-center text-muted small fs-5 mb-2">DE150182</div>
+                <div className="row mb-3 align-items-center">
+                  <div className="col-4 text-start">
+                    <div className="fw-bold">Nguyễn Hữu Quốc Khánh</div>
+                    <div>
+                      <input type="radio" name="present1" id="absent1" />
+                      <label htmlFor="absent1" className="ms-2">Absent</label>
+                    </div>
+                  </div>
+                  <div className="col-4 text-center"></div>
+                  <div className="col-4 text-end">
+                    <div>DaNang</div>
+                    <div>
+                      <input type="radio" name="present1" id="present1" />
+                      <label htmlFor="present1" className="ms-2">Present</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <button className="btn btn-button btn-lg px-4" style={{fontSize: '1.25rem'}}>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Student 2 */}
+          <div className="col">
+            <div className="student-card bg-white p-0">
+              <img
+                src="https://caodang.fpt.edu.vn/wp-content/uploads/H3.5-500x333.jpg"
+                className="student-img"
+                alt="Student 2"
+              />
+              <div className="p-3">
+                <div className="text-center text-muted small fs-5 mb-2">DE160377</div>
+                <div className="row mb-3 align-items-center">
+                  <div className="col-4 text-start">
+                    <div className="fw-bold">Lê Thị Hoa</div>
+                    <div>
+                      <input type="radio" name="present2" id="absent2" />
+                      <label htmlFor="absent2" className="ms-2">Absent</label>
+                    </div>
+                  </div>
+                  <div className="col-4 text-center"></div>
+                  <div className="col-4 text-end">
+                    <div>QuangNam</div>
+                    <div>
+                      <input type="radio" name="present2" id="present2" />
+                      <label htmlFor="present2" className="ms-2">Present</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <button className="btn btn-button btn-lg px-4" style={{fontSize: '1.25rem'}}>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Student 3 */}
+          <div className="col">
+            <div className="student-card bg-white p-0">
+              <img
+                src="https://yt3.googleusercontent.com/pCMuRGbEa6s80msPEkAbpihEUZ1AaLAdgL90pHEdj9gebqSxKonbYfBoFbmcdKwm9rkFoay9=s900-c-k-c0x00ffffff-no-rj"
+                className="student-img"
+                alt="Student 3"
+              />
+              <div className="p-3">
+                <div className="text-center text-muted small fs-5 mb-2">DE160547</div>
+                <div className="row mb-3 align-items-center">
+                  <div className="col-4 text-start">
+                    <div className="fw-bold">Đỗ Phúc Hạ</div>
+                    <div>
+                      <input type="radio" name="present3" id="absent3" />
+                      <label htmlFor="absent3" className="ms-2">Absent</label>
+                    </div>
+                  </div>
+                  <div className="col-4 text-center"></div>
+                  <div className="col-4 text-end">
+                    <div>QuangNam</div>
+                    <div>
+                      <input type="radio" name="present3" id="present3" />
+                      <label htmlFor="present3" className="ms-2">Present</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <button className="btn btn-button btn-lg px-4" style={{fontSize: '1.25rem'}}>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Student 4 */}
+          <div className="col">
+            <div className="student-card bg-white p-0">
+              <img
+                src="https://cdnphoto.dantri.com.vn/EoqR_dOwT6EXySqpbMfdhkmo0gI=/thumb_w/1020/2023/04/28/dantri-lo-trinh-hoc-tap-len-cac-cap-hoc-cao-hon-cho-hoc-sinh-phan-luong-sau-thcs-theo-giao-duc-nghe-nghiep-anhntv34docx-1682651902124.jpeg"
+                className="student-img"
+                alt="Student 4"
+              />
+              <div className="p-3">
+                <div className="text-center text-muted small fs-5 mb-2">DE170049</div>
+                <div className="row mb-3 align-items-center">
+                  <div className="col-4 text-start">
+                    <div className="fw-bold">Lê Hoàng Minh</div>
+                    <div>
+                      <input type="radio" name="present4" id="absent4" />
+                      <label htmlFor="absent4" className="ms-2">Absent</label>
+                    </div>
+                  </div>
+                  <div className="col-4 text-center"></div>
+                  <div className="col-4 text-end">
+                    <div>DaNang</div>
+                    <div>
+                      <input type="radio" name="present4" id="present4" />
+                      <label htmlFor="present4" className="ms-2">Present</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <button className="btn btn-button btn-lg px-4" style={{fontSize: '1.25rem'}}>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="footer mt-4">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 text-start">
+              <div className="address-title">Our Address</div>
+              <div className="contact-info">
+                Khu đô thị FPT Đà Nẵng<br />
+                <i className="fas fa-phone"></i> +84 0231111111<br />
+                <i className="fas fa-fax"></i> +852 8765 4321<br />
+                <i className="fas fa-envelope"></i> <a href="mailto:fptudn@fpt.edu.vn">fptudn@fpt.edu.vn</a>
+              </div>
+            </div>
+            <div className="col-md-6 text-end">
+              <div className="social-icons mb-2">
+                <a href="#"><i className="fab fa-google-plus-g"></i></a>
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-youtube"></i></a>
+                <a href="#"><i className="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div className="copyright">© Copyright 2023</div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Exercise5;
