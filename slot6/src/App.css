@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
+.card.border-primary {
+  background-color: #a0c1f3; /* xanh nhạt */
+  color: #072d67; /* chữ xanh đậm */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card.border-warning {
+  background-color: #fdeebe; /* vàng nhạt */
+  color: #806209; /* chữ vàng đậm */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card.border-danger {
+  background-color: #ffb5bb; /* đỏ nhạt */
+  color: #8e1b25; /* chữ đỏ đậm */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Giữ cho ảnh không bị ảnh hưởng */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }

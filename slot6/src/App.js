@@ -16,7 +16,7 @@ function App() {
               alt="Car 1"
             />
             <div className="card-body">
-              <p className="card-text text-primary">Some text inside the first card</p>
+              <p className="card-text">Some text inside the first card</p>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ function App() {
               alt="Car 2"
             />
             <div className="card-body">
-              <p className="card-text text-warning">Some text inside the first card</p>
+              <p className="card-text">Some text inside the first card</p>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ function App() {
               alt="Car 3"
             />
             <div className="card-body">
-              <p className="card-text text-danger">Some text inside the first card</p>
+              <p className="card-text">Some text inside the first card</p>
             </div>
           </div>
         </div>
