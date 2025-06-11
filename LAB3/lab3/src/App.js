@@ -8,7 +8,7 @@ import BookTable from './components/BookTable';
 
 function App() {
   return (
-    <div>
+    <div className="App" style={{ backgroundColor: '#333' }}>
       <Header />
       <PizzaCarousel />
       <Menu />

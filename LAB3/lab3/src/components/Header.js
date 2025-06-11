@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Form, Button, Container } from 'react-bootstrap';
-import { FaSearch } from 'react-icons/fa'; // Thay thế FontAwesome bằng React Icons
-
+import { FaSearch } from 'react-icons/fa'; 
 const Header = () => (
   <Navbar bg="dark" variant="dark" expand="lg">
     <Container fluid>
@@ -25,7 +24,9 @@ const Header = () => (
           <Button variant="danger" style={{ paddingRight: '15px' }}>
             <FaSearch />
           </Button>
+
         </Form>
+        
       </Navbar.Collapse>
     </Container>
   </Navbar>

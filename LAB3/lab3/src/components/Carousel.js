@@ -1,10 +1,9 @@
 import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const PizzaCarousel = () => {
   return (
     <Carousel>
-      {/* Slide 1 - Neapolitan Pizza */}
+
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -22,7 +21,7 @@ const PizzaCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
 
-      {/* Slide 2 - Delicious Variety */}
+
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -40,7 +39,8 @@ const PizzaCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
 
-      {/* Slide 3 - Book Your Table */}
+
+
       <Carousel.Item>
         <img
           className="d-block w-100"
