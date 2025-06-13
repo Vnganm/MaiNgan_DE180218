@@ -8,13 +8,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import StudentCard from "./components/StudentCard";
 
 function App() {
-  const userData = { name: "traltb@fe.edu.vn", age: 39 };
-  const namesList = ["traltb@fe.edu.vn", "test@fe.edu.vn"];
+  const userData = { name: "nganvm@fe.edu.vn", age: 20 };
+  const namesList = ["nganvm@fe.edu.vn", "test@fe.edu.vn"];
   
   const students = [
-    { name: "Nha Phuong", age: 19, avatar: "https://baovephapluat.vn/data/images/0/2023/02/25/haipv/a.jpg?dpi=150&quality=100&w=820" },
-    { name: "Quoc Phong", age: 20, avatar: "https://photo.znews.vn/w660/Uploaded/sgtnrn/2024_11_22/TT.png" },
-    { name: "Gia Man", age: 21, avatar: "https://uploads.nguoidothi.net.vn/content/56b553eb-922a-4c4f-80e1-1229ef7594a2.jpg" },
+    { name: "Nha Phuong", age: 19, avatar: "https://photo.znews.vn/w660/Uploaded/neg_yslewlx/2019_07_25/thanhviennhomnhachktsau13namnguoitrothanhdoanhnhankesuyttutuvinonan.jpg" },
+    { name: "Quoc Phong", age: 20, avatar: "https://photo.znews.vn/w660/Uploaded/neg_yslewlx/2019_07_25/thanhviennhomnhachktsau13namnguoitrothanhdoanhnhankesuyttutuvinonan.jpg" },
+    { name: "Gia Man", age: 21, avatar: "https://photo.znews.vn/w660/Uploaded/neg_yslewlx/2019_07_25/thanhviennhomnhachktsau13namnguoitrothanhdoanhnhankesuyttutuvinonan.jpg" },
   ];
 
   return (
