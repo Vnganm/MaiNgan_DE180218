@@ -32,7 +32,7 @@ function TodoList() {
         <Button variant="primary" onClick={addTodo} className="mb-3">
           Add Todo
         </Button>
-        
+
         <ListGroup>
           {todos.map((todo, index) => (
             <ListGroup.Item key={index} className="d-flex justify-content-between align-items-center">
