@@ -6,25 +6,11 @@ import CompleteForm from './components/CompleteForm'; // Exercise 6
 
 function App() {
   return (
-    <div className="App">
+    <div>
+    <ValidatedInput/>
+    <EmailPasswordForm/>
+    <CompleteForm/>
 
-      {/* Exercise 4 */}
-      <div className="mb-5">
-        <h2 className="text-center">Exercise 4: Basic Validation</h2>
-        <ValidatedInput />
-      </div>
-      
-      {/* Exercise 5 */}
-      <div className="mb-5">
-        <h2 className="text-center">Exercise 5: Email & Password Validation</h2>
-        <EmailPasswordForm />
-      </div>
-      
-      {/* Exercise 6 */}
-      <div className="mb-5">
-        <h2 className="text-center">Exercise 6: Complete Form Validation</h2>
-        <CompleteForm />
-      </div>
     </div>
   );
 }
