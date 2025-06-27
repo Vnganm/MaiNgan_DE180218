@@ -58,6 +58,7 @@ function Quiz() {
         setQuizCompleted(true);
     };
 
+    
     const resetQuiz = () => {
         setUserAnswers({});
         setResults({});
