@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "React Router Basics",
+      "content": "This post explains the basics of React Router in a React application.",
+      "author": "Admin"
+    },
+    {
+      "id": 2,
+      "title": "React Bootstrap Introduction",
+      "content": "This post introduces how to use React Bootstrap to create beautiful UIs.",
+      "author": "User"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript ES6 Features",
+      "content": "This post discusses the new features introduced in JavaScript ES6.",
+      "author": "Admin"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456",
+      "name": "Quản trị viên"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "123456",
+      "name": "Người dùng thường"
+    }
+  ]
+}
