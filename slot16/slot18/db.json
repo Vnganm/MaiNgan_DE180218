@@ -1,0 +1,47 @@
+{
+  "posts": [
+    { "id": 1, "title": "Hello World", "content": "This is a test post" },
+    { "id": 2, "title": "Introduction to JSON", "content": "JSON (JavaScript Object Notation) is a lightweight data-interchange format." },
+    { "id": 3, "title": "Getting Started with Node.js", "content": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine." },
+    { "id": 4, "title": "Understanding RESTful APIs", "content": "REST (Representational State Transfer) is an architectural style for distributed hypermedia systems." },
+    { "id": 5, "title": "Exploring JavaScript ES6 Features", "content": "ES6 introduces several new features to JavaScript, such as arrow functions and promises." },
+    { "id": 6, "title": "Web Development Trends in 2025", "content": "In 2025, modern web development will continue evolving with technologies like WebAssembly and serverless architecture." }
+  ],
+  "useraccounts": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "password123",
+      "avatar": "/images/admin-avatar.jpg"
+    },
+    {
+      "id": 2,
+      "username": "janesmith",
+      "email": "jane.smith@example.com",
+      "password": "password456",
+      "avatar": "/images/janesmith-avatar.jpg"
+    },
+    {
+      "id": 3,
+      "username": "alicebrown",
+      "email": "alice.brown@example.com",
+      "password": "password789",
+      "avatar": "/images/alicebrown-avatar.jpg"
+    },
+    {
+      "id": 4,
+      "username": "bobjohnson",
+      "email": "bob.johnson@example.com",
+      "password": "password101",
+      "avatar": "/images/bobjohnson-avatar.jpg"
+    },
+    {
+      "id": 5,
+      "username": "charliewilliams",
+      "email": "charlie.williams@example.com",
+      "password": "password202",
+      "avatar": "/images/charliewilliams-avatar.jpg"
+    }
+  ]
+}

@@ -68,7 +68,7 @@ function Quiz() {
 
     return (
         <QuizContext.Provider value={{ userAnswers, setUserAnswers }}>
-            <Container className="mt-4" style={{ maxWidth: '900px' }}>
+            <Container className="mt-3" style={{ maxWidth: '800px' }}>
                 <h2 className="text-left mb-4">Thêm câu hỏi mới</h2>
                 <Form>
                     <Form.Group className="mb-3">

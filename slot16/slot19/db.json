@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "title": "Understanding RESTful APIs 123",
+      "content": "REST (Representational State Transfer) is an architectural style for distributed hypermedia systems.",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "title": "Exploring JavaScript ES6 Features",
+      "content": "ES6 introduces several new features to JavaScript, such as arrow functions and promises."
+    },
+    {
+      "id": "6",
+      "title": "Web Development Trends in 2025",
+      "content": "In 2025, modern web development will continue evolving with technologies like WebAssembly and serverless architecture."
+    },
+    {
+      "id": "29ef",
+      "title": "Hot news: Chí Trung mơ thấy nyc",
+      "content": "Hôm qua ngày sinh nhật của NIhon, anh Chí Trung đã đề cập tới nyc-chị Linh...."
+    },
+    {
+      "id": "1286",
+      "title": "ngủ",
+      "content": "tui buồn ngủ"
+    }
+  ],
+  "useraccounts": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "password123",
+      "avatar": "/images/admin-avatar.jpg"
+    },
+    {
+      "id": "2",
+      "username": "janesmith",
+      "email": "jane.smith@example.com",
+      "password": "password456",
+      "avatar": "/images/janesmith-avatar.jpg"
+    },
+    {
+      "id": "3",
+      "username": "alicebrown",
+      "email": "alice.brown@example.com",
+      "password": "password789",
+      "avatar": "/images/alicebrown-avatar.jpg"
+    },
+    {
+      "id": "4",
+      "username": "bobjohnson",
+      "email": "bob.johnson@example.com",
+      "password": "password101",
+      "avatar": "/images/bobjohnson-avatar.jpg"
+    },
+    {
+      "id": "5",
+      "username": "charliewilliams",
+      "email": "charlie.williams@example.com",
+      "password": "password202",
+      "avatar": "/images/charliewilliams-avatar.jpg"
+    }
+  ]
+}

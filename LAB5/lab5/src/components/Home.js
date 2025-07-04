@@ -13,7 +13,7 @@ import pic6 from '../images/menu-06.jpg';
 const Home = () => {
   return (
     <div>
-      <Carousel id="carouselExampleCaptions" className="mt-1" variant="light" interval={8000}>
+      <Carousel id="carouselExampleCaptions" className="mt-1" variant="light" interval={3000}>
         <Carousel.Item>
           <Image src={slideImg1} className="d-block w-100" alt="First slide" />
           <Carousel.Caption>
@@ -37,7 +37,7 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
       <Container >
-        <Row>
+        <Row className='mt-2'>
           <Col>
             <Image src={pic1} roundedCircle />
           </Col>
