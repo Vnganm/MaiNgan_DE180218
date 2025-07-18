@@ -17,122 +17,68 @@ const LaptopDetail = ({ user, setUser }) => {
   const fetchLaptopDetail = async () => {
     try {
       const response = await axios.get(`http://localhost:3001/Laptops/${id}`);
-      if (response.data) {
-        setLaptop(response.data);
-      } else {
-        navigate('/404');
-      }
+      setLaptop(response.data || null);
       setLoading(false);
     } catch (error) {
-      console.error('Error fetching laptop detail:', error);
+      console.error('Error:', error);
       setLoading(false);
-      // Chỉ chuyển đến 404 nếu thực sự không tìm thấy (status 404)
-      if (error.response && error.response.status === 404) {
-        navigate('/404');
-      } else {
-        // Nếu lỗi khác (như server down), hiển thị thông báo lỗi
-        setLaptop(null);
-      }
+      error.response?.status === 404 ? navigate('/404') : setLaptop(null);
     }
   };
 
-  const handleBackToList = () => {
-    navigate('/laptops');
-  };
+  const handleBack = () => navigate('/laptops');
+  const handleLogout = () => { setUser(null); navigate('/'); };
 
-  const handleLogout = () => {
-    setUser(null);
-    navigate('/');
-  };
-
-  if (loading) {
-    return (
-      <Container className="mt-5">
-        <div className="text-center">
-          <div className="spinner-border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </div>
-        </div>
-      </Container>
-    );
-  }
-
-  if (!laptop) {
-    return (
-      <Container className="mt-5">
-        <div className="text-center">
-          <h2>Laptop not found</h2>
-          <Button variant="primary" onClick={handleBackToList}>
-            Back to List
-          </Button>
-        </div>
-      </Container>
-    );
-  }
+  if (loading) return <div className="text-center mt-5">Loading...</div>;
+  if (!laptop) return (
+    <Container className="mt-5 text-center">
+      <h4>Laptop not found</h4>
+      <Button variant="outline-primary" onClick={handleBack}>Back</Button>
+    </Container>
+  );
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="light" expand="lg" className="border-bottom">
         <Container>
-          <Navbar.Brand>Laptop Management</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link onClick={handleLogout}>
-                Logout ({user.username})
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+          <Navbar.Brand>Laptop Details</Navbar.Brand>
+          <Nav className="ms-auto">
+
+            <Button variant="outline-danger" onClick={handleLogout}>
+              Logout ({user.username})
+            </Button>
+          </Nav>
         </Container>
       </Navbar>
 
       <Container className="mt-4">
-        <Row className="mb-3">
-          <Col>
-            <Button variant="secondary" onClick={handleBackToList}>
-              ← Back to List
-            </Button>
-          </Col>
-        </Row>
-
         <Row>
-          <Col md={6}>
+          <Col md={6} className="mb-4">
             <Card>
               <Card.Img
                 variant="top"
                 src={laptop.image}
-                alt={`${laptop.brand} ${laptop.model}`}
-                style={{ height: '400px', objectFit: 'cover' }}
-                onError={(e) => {
-                  e.target.src = 'https://via.placeholder.com/400x300?text=No+Image';
-                }}
+                alt={laptop.model}
+                style={{ height: '300px', objectFit: 'contain' }}
+                onError={(e) => e.target.src = 'https://via.placeholder.com/300?text=No+Image'}
               />
             </Card>
           </Col>
+
           <Col md={6}>
-            <Card>
+            <Card className="border-0">
               <Card.Body>
-                <Card.Title className="display-6">
-                  {laptop.brand} {laptop.model}
-                </Card.Title>
-                <Card.Text>
-                  <div className="mb-3">
-                    <strong>Brand:</strong> {laptop.brand}
-                  </div>
-                  <div className="mb-3">
-                    <strong>Model:</strong> {laptop.model}
-                  </div>
-                  <div className="mb-3">
-                    <strong>Year:</strong> {laptop.year}
-                  </div>
-                  <div className="mb-3">
-                    <strong>Price:</strong> <span className="text-success fs-4">{laptop.price}</span>
-                  </div>
-                  <div className="mb-3">
-                    <strong>Description:</strong><br />
-                    {laptop.description || 'No description available'}
-                  </div>
-                </Card.Text>
+                <h3>{laptop.brand} {laptop.model}</h3>
+                <p className="text-muted">Year: {laptop.year}</p>
+                <h5 className="text-primary mb-3">{laptop.price}</h5>
+                
+                <hr />
+
+                <h5>Description</h5>
+                <p>{laptop.description || 'No description available.'}</p>
+
+
+                <Button variant="primary" onClick={handleBack} className="me-2">Back</Button>
               </Card.Body>
             </Card>
           </Col>

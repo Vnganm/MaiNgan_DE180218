@@ -1,70 +1,87 @@
 {
   "Laptops": [
     {
-      "id": 1,
+      "id": "1",
       "brand": "Dell",
       "model": "XPS 13",
       "year": 2023,
       "price": "$999",
       "image": "/images/dell-xps13.jpg",
-      "description": "Ultra-thin and lightweight laptop with excellent performance"
+      "description": "Ultra-thin and lightweight laptop with excellent performance",
+      "quantity": 10
     },
     {
-      "id": 2,
+      "id": "2",
       "brand": "Apple",
       "model": "MacBook Pro",
       "year": 2022,
       "price": "$2500",
       "image": "/images/macbook-pro.jpg",
-      "description": "Professional laptop with M2 chip and Retina display"
+      "description": "Professional laptop with M2 chip and Retina display",
+      "quantity": 6
     },
     {
-      "id": 3,
+      "id": "3",
       "brand": "HP",
       "model": "Spectre x360",
       "year": 2021,
       "price": "$1800",
       "image": "/images/hp-spectre.jpg",
-      "description": "Convertible laptop with touchscreen and stylus support"
+      "description": "Convertible laptop with touchscreen and stylus support",
+      "quantity": 7
     },
     {
-      "id": 4,
+      "id": "4",
       "brand": "Lenovo",
       "model": "ThinkPad X1",
       "year": 2020,
       "price": "$1600",
       "image": "/images/lenovo-thinkpad.jpg",
-      "description": "Business laptop with exceptional keyboard and durability"
+      "description": "Business laptop with exceptional keyboard and durability",
+      "quantity": 8
     }
   ],
   "UserAccounts": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "1234567",
       "account_type": "admin",
       "status": "active"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "jane",
       "password": "1234567",
       "account_type": "user",
       "status": "inactive"
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "alice",
       "password": "1234567",
       "account_type": "user",
       "status": "active"
     },
     {
-      "id": 4,
+      "id": "4",
       "username": "bob",
       "password": "1234567",
       "account_type": "guest",
       "status": "active"
+    }
+  ],
+  "cart": [
+    {
+      "id": "3",
+      "brand": "HP",
+      "model": "Spectre x360",
+      "year": 2021,
+      "price": "$1800",
+      "image": "/images/hp-spectre.jpg",
+      "description": "Convertible laptop with touchscreen and stylus support",
+      "quantity": 6,
+      "cartQuantity": 1
     }
   ]
 }

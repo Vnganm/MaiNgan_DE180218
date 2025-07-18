@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Modal, Alert } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = ({ setUser }) => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -40,12 +42,13 @@ const LoginForm = ({ setUser }) => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+    navigate('/laptops'); // Thêm điều hướng sau khi đóng modal
   };
 
   return (
     <Container className="mt-5">
       <Row className="justify-content-center">
-        <Col md={6}>
+        <Col md={5}>
           <div className="card shadow">
             <div className="card-body">
               <h2 className="text-center mb-4">Login</h2>
