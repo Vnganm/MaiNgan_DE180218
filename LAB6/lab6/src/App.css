@@ -1,0 +1,49 @@
+
+.custom-title {
+  background-color: #000000d1;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0;
+}
+.card {
+  margin-top: 20px;
+}
+.option {
+  background-color: #c1dcfe;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.review-question.correct {
+  background-color: #caf2d4;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.review-question.incorrect {
+  background-color: #f8b4bf;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.question-nav-grid .btn {
+  background-color: #76ca6f;
+  border-radius: 5px;
+  margin: 2px;
+  width: 100%;
+  text-align: center;
+}
+.btn-primary, .btn-success {
+  background-color: #007bff;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.buttons-row {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
