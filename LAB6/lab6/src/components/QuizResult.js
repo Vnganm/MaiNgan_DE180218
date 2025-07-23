@@ -62,6 +62,10 @@ const QuizResult = () => {
       <Container className="mt-4">
         <Card>
           <Card.Body>
+            <div className="score-card text-center mb-4">
+              <h3>Score: {score} / {questions.length} ({getPercentage()}%)</h3>
+              <p>{getGrade()}</p>
+            </div>
             <div className="review-content">
               {questions.map((question, index) => {
                 const userAnswer = userAnswers[question.id];

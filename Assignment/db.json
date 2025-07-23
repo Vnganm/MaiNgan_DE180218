@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Pizza Hải Sản",
+      "description": "Pizza phủ tôm, mực, nghêu, sốt marinara chua thanh và thơm mùi đặc trưng",
+      "price": "250000",
+      "currentPrice": "199000",
+      "image": "/images/pizza.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Gà Rán",
+      "description": "Gà rán giòn cay, kèm khoai tây chiên. Giòn tan ngon miệng.",
+      "price": "159000",
+      "currentPrice": "99000",
+      "image": "/images/fried_chicken.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Burger Bò Phô Mai",
+      "description": "Bánh mì kẹp thịt bò nướng, phô mai cheddar, rau diếp, cà chua",
+      "price": "150000",
+      "currentPrice": "119000",
+      "image": "/images/cheeseburger.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Mì Ý Sốt Bò Băm",
+      "description": "Mì spaghetti với sốt cà chua, thịt bò băm, phô mai parmesan",
+      "price": "180000",
+      "currentPrice": "139000",
+      "image": "/images/spaghetti.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Taco Gà",
+      "description": "Tortilla mềm được kẹp nhân gà nướng thơm lừng, ướp với gia vị Mexico đặc trưng. ",
+      "price": "110000",
+      "currentPrice": "99000",
+      "image": "/images/taco.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Salad Caesar",
+      "description": "Xà lách romaine, bánh mì nướng, phô mai parmesan, sốt Caesar",
+      "price": "100000",
+      "currentPrice": "79000",
+      "image": "/images/caesar_salad.jpg"
+    },
+    {
+      "id": "1753122339233",
+      "name": "Cá hồi áp chảo sốt bơ chanh",
+      "description": "Cá hồi tươi áp chảo lớp da giòn, rưới sốt bơ chanh béo ngậy, thanh mát, phục vụ cùng rau củ hấp.\n\n",
+      "price": "120000",
+      "currentPrice": "100000",
+      "image": "https://cdn.tgdd.vn/2021/02/CookProduct/1-1200x676-57.jpg"
+    },
+    {
+      "id": "1753251729389",
+      "name": "Cá tầm nướng ",
+      "description": "Thịt cá mềm ngọt, dai nhẹ, đặc biệt là không có xương. Món ăn thường được nướng trên lửa than hoa, tẩm ướp đậm đà",
+      "price": "179000",
+      "currentPrice": "129000",
+      "image": "https://alaviet.com/vnt_upload/product/11_2022/DSCF2566.jpg"
+    },
+    {
+      "id": "1753251929159",
+      "name": "Mỳ Ý Cua Sốt Kem ",
+      "description": "Mì Ý Cua sốt kem là món ăn mang đến hương vị hòa quyện của sốt kem cà thơ béo, đậm đà của thịt cua.",
+      "price": "189000",
+      "currentPrice": "118997",
+      "image": "https://cdn.tgdd.vn/Files/2021/06/20/1361779/cach-lam-mi-y-cua-sot-kem-beo-ngay-ngon-chuan-pizza-4ps-202106202117365919.jpg"
+    }
+  ]
+}
